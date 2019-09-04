@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id "io.spring.dependency-management" version "1.0.4.RELEASE"
+    id "org.springframework.boot" version "2.1.0.RELEASE"
+}
+
+ext { springBootVersion = '2.1.6.RELEASE' }
+
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile("org.springframework.boot:spring-boot-starter-data-jpa")
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("com.h2database:h2")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
+}
