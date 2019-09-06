@@ -30,6 +30,7 @@ public class ProductsController {
         productRepository.save(product);
         response.sendRedirect("/products");
     }
+
     @PutMapping("/products/{id}")
     public void updateProduct(@RequestBody @Valid Product product, @PathVariable("id") long id, HttpServletResponse response)
             throws Exception{
@@ -43,7 +44,6 @@ public class ProductsController {
         productRepository.deleteById(id);
         response.sendRedirect("/products");
     }
-
 
     @GetMapping( "/categories")
     public Iterable<Category> getCategories(){
