@@ -4,7 +4,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 @Entity
-@Table(name = "Products")
+@Table(name = "products")
 public class Product {
 
     @Id
@@ -15,7 +15,7 @@ public class Product {
     private String name;
 
     @ManyToOne
-    @JoinColumn(name = "Categories_id")
+    @JoinColumn(name = "categories_id")
     private Category category;
 
     protected Product(){}
