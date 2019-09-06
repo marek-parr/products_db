@@ -13,7 +13,7 @@ public class Category {
     private Long id;
     @NotBlank
     private String name;
-    @OneToMany
+    @OneToMany(mappedBy = "category")
     private List<Product> products;
 
 
