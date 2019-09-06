@@ -16,3 +16,5 @@ services:
     environment:
       POSTGRESS_USERNAME: postgres
       POSTGRESS_PASSWORD: admin
+volumes:
+  data:
