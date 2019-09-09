@@ -2,29 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19d02fbe-97d6-4476-9afe-5e7f17f2118c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lombok.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/categories/CategoriesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/categories/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/categories/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/products/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/products/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/products/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/categories/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/products/CategoryRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/products/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/products/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/products/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/products/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/products/ProductsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/products/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/products/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/WebSecurityConfig.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
