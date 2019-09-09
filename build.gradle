@@ -2,6 +2,7 @@ plugins {
     id 'java'
     id "io.spring.dependency-management" version "1.0.4.RELEASE"
     id "org.springframework.boot" version "2.1.0.RELEASE"
+    id "io.freefair.lombok" version "4.0.2"
 }
 
 ext { springBootVersion = '2.1.6.RELEASE' }
@@ -15,11 +16,16 @@ repositories {
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
     compile("org.springframework.boot:spring-boot-starter-data-jpa")
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-security")
+    compileOnly 'org.projectlombok:lombok:1.18.4'
+    annotationProcessor 'org.projectlombok:lombok:1.18.4'
+    testCompile("junit:junit:4.12")
     testCompile("org.springframework.boot:spring-boot-starter-test")
     testCompile("org.springframework.security:spring-security-test")
-    compile("org.springframework.boot:spring-boot-starter-security")
-    implementation 'org.postgresql:postgresql:42.2.6.jre7'
+    implementation("org.postgresql:postgresql:42.2.6.jre7")
+    
+    // najpierw compile, potem testCompile i implementation, dodatkowo trzymamy się jednej kowwencji dodawania 
+    // dependencies, albo z nawiasami, albo group name, albo bez nawiasów, dodatkowo albo ' albo "
 }

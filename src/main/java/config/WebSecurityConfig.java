@@ -1,4 +1,4 @@
-package products;
+package config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -39,19 +39,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
                 .usersByUsernameQuery(userQuery)
                 .authoritiesByUsernameQuery(roleQuery);
     }
-
-
-
-    /*@Bean
-    @Override
-    public UserDetailsService userDetailsService(){
-        UserDetails user =
-                User.withDefaultPasswordEncoder()
-                        .username("user")
-                        .password("pass")
-                        .roles("USER")
-                        .build();
-        return new InMemoryUserDetailsManager(user);
-    }*/
-
 }

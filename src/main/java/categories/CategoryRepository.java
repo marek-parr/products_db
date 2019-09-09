@@ -1,9 +1,9 @@
-package products;
+package categories;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 
 @Repository
-public interface CategoryRepository extends CrudRepository<Category, Long> {
+interface CategoryRepository extends CrudRepository<Category, Long> {
 }

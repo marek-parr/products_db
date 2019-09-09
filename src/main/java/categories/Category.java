@@ -1,4 +1,9 @@
-package products;
+package categories;
+
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import products.Product;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
@@ -6,12 +11,14 @@ import java.util.List;
 
 @Entity
 @Table(name = "categories")
+@Data
 public class Category {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @NotBlank
+    @Column(unique = true)
     private String name;
     @OneToMany(mappedBy = "category")
     private List<Product> products;
@@ -20,22 +27,6 @@ public class Category {
     protected Category() {}
 
     public Category(@NotBlank String name) {
-        this.name = name;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
         this.name = name;
     }
 
