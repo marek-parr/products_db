@@ -1,13 +1,16 @@
-package products;
+package pl.epoint.mparr.products;
 
-import categories.Category;
+import pl.epoint.mparr.categories.Category;
 import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 @Entity
 @Table(name = "products")
 @Data
+@NoArgsConstructor
 public class Product {
 
     @Id
@@ -21,15 +24,8 @@ public class Product {
     @JoinColumn(name = "categories_id", nullable = false)
     private Category category;
 
-    protected Product(){}
-
     public Product(String name) {
         this.name = name;
-    }
-
-    @Override
-    public String toString(){
-        return "ID: "+id+", name: "+name+", category: "+category.getName();
     }
 
 }

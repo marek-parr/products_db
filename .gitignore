@@ -3,8 +3,8 @@
 /build/
 /build/classes/java/main/
 # Dodaj tutaj trochę ścieżek do gitignore, szczególnie to co intellij generuje i inne ide.
-.idea/**/workspace.xml
-.idea/**/tasks.xml
-.idea/**/usage.statistics.xml
-.idea/**/dictionaries
-.idea/**/shelf
+# chyba wszystko z .idea może być wyrzucone wystarczy podać sam folder
+.idea/
+/out
+#Dodatkowo jak budujesz projekt z IntelliJ to generuje się folder out/ też trzeba go tutaj dodać
+

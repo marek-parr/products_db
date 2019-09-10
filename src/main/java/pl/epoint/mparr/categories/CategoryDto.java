@@ -1,4 +1,4 @@
-package categories;
+package pl.epoint.mparr.categories;
 
 import lombok.Getter;
 import lombok.Setter;

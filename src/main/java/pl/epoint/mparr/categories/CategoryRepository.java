@@ -1,12 +1,11 @@
-package products;
+package pl.epoint.mparr.categories;
 
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
-
 import java.util.List;
 
 @Repository
-interface ProductRepository extends CrudRepository<Product, Long> {
+interface CategoryRepository extends CrudRepository<Category, Long> {
     @Override
-    List<Product> findAll();
+    List<Category> findAll();
 }

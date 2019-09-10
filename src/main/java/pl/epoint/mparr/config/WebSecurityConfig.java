@@ -1,4 +1,4 @@
-package config;
+package pl.epoint.mparr.config;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;

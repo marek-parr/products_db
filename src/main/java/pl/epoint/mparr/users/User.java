@@ -1,4 +1,4 @@
-package users;
+package pl.epoint.mparr.users;
 
 import lombok.Getter;
 import lombok.Setter;
