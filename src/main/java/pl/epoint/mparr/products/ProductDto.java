@@ -1,6 +1,5 @@
 package pl.epoint.mparr.products;
 
-import pl.epoint.mparr.categories.Category;
 import lombok.Getter;
 import lombok.Setter;
 import pl.epoint.mparr.categories.CategoryDto;

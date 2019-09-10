@@ -3,27 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="19d02fbe-97d6-4476-9afe-5e7f17f2118c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/categories/CategoriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/categories/CategoriesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/categories/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/categories/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/categories/CategoryDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/categories/CategoryDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/categories/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/categories/CategoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/categories/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/categories/CategoryService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/products/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/products/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/products/ProductDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/products/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/products/ProductRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/products/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/products/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/products/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/products/ProductsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/users/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/users/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <list id="ed2830ef-c2b8-41a7-92e6-16958ea128de" name="CR v2" comment="CR v2">
       <changelist_data name="=?UTF-8?q?Daniel=20Obr=C4=99bski?=" email="dobrebski@e-point.pl" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/products/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/products/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/products/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/products/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/products/ProductsController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,52 +30,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/products/Product.java">
-      <ranges>
-        <range start1="0" end1="1" start2="0" end2="1" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="2" end1="3" start2="2" end2="3" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="4" end1="4" start2="4" end2="6" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="10" end1="10" start2="12" end2="13" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="23" end1="25" start2="26" end2="26" changelist="ed2830ef-c2b8-41a7-92e6-16958ea128de" />
-        <range start1="28" end1="33" start2="29" end2="29" changelist="ed2830ef-c2b8-41a7-92e6-16958ea128de" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/products/ProductService.java">
-      <ranges>
-        <range start1="0" end1="1" start2="0" end2="1" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="3" end1="3" start2="3" end2="4" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="6" end1="7" start2="7" end2="8" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="10" end1="11" start2="11" end2="12" changelist="ed2830ef-c2b8-41a7-92e6-16958ea128de" />
-        <range start1="12" end1="12" start2="13" end2="14" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="13" end1="15" start2="15" end2="19" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="17" end1="19" start2="21" end2="23" changelist="ed2830ef-c2b8-41a7-92e6-16958ea128de" />
-        <range start1="21" end1="23" start2="25" end2="28" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="25" end1="26" start2="30" end2="37" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="29" end1="29" start2="40" end2="48" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/products/ProductsController.java">
-      <ranges>
-        <range start1="0" end1="1" start2="0" end2="1" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="2" end1="4" start2="2" end2="2" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="5" end1="6" start2="3" end2="4" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="8" end1="9" start2="6" end2="8" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="10" end1="11" start2="9" end2="9" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="12" end1="14" start2="10" end2="10" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="17" end1="18" start2="13" end2="13" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="22" end1="23" start2="17" end2="17" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="26" end1="31" start2="20" end2="21" changelist="ed2830ef-c2b8-41a7-92e6-16958ea128de" />
-        <range start1="35" end1="40" start2="25" end2="29" changelist="ed2830ef-c2b8-41a7-92e6-16958ea128de" />
-        <range start1="43" end1="54" start2="32" end2="37" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="58" end1="66" start2="41" end2="46" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="67" end1="69" start2="47" end2="49" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="72" end1="75" start2="52" end2="55" changelist="ed2830ef-c2b8-41a7-92e6-16958ea128de" />
-        <range start1="76" end1="77" start2="56" end2="57" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-        <range start1="78" end1="86" start2="58" end2="58" changelist="19d02fbe-97d6-4476-9afe-5e7f17f2118c" />
-      </ranges>
-    </file>
   </component>
   <component name="ProjectId" id="1QbGTMzYaYvjdOjRHB5qteQIsa3" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
