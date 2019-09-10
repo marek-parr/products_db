@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19d02fbe-97d6-4476-9afe-5e7f17f2118c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/categories/CategoryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/products/ProductDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/categories/CategoriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/categories/CategoriesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/categories/CategoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/categories/CategoryRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/categories/CategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/categories/CategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/config/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/products/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/products/ProductRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/products/ProductRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/products/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/products/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/products/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/products/ProductsController.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

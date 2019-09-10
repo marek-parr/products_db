@@ -2,9 +2,6 @@ package products;
 
 import categories.Category;
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
@@ -32,7 +29,7 @@ public class Product {
 
     @Override
     public String toString(){
-        return "ID: "+id+", name: "+name+", category: "+category;
+        return "ID: "+id+", name: "+name+", category: "+category.getName();
     }
 
 }

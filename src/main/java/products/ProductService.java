@@ -3,6 +3,7 @@ package products;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -10,7 +11,7 @@ import java.util.Optional;
 public class ProductService {
     private final ProductRepository productRepository;
 
-    public Iterable<Product> findAll(){
+    public List<Product> findAll(){
         return productRepository.findAll();
     }
 

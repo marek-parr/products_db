@@ -1,10 +1,7 @@
 package categories;
 
 import lombok.Data;
-import lombok.Getter;
-import lombok.Setter;
 import products.Product;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 import java.util.List;
@@ -22,7 +19,6 @@ public class Category {
     private String name;
     @OneToMany(mappedBy = "category")
     private List<Product> products;
-
 
     protected Category() {}
 
