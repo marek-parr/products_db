@@ -17,38 +17,52 @@ class ProductsController {
     private final ProductService productService;
     private final CategoryService categoryService;
 
-    public ResponseEntity<List<ProductDto>> getProducts(){
+    @GetMapping
+    public ResponseEntity<List<ProductDto>> getProducts() {
         return new ResponseEntity<>(productService.findAll(), HttpStatus.OK);
     }
 
-    public ResponseEntity<ProductDto> getProduct(@PathVariable("id") long id){
+    @GetMapping
+    public ResponseEntity<ProductDto> getProduct(@PathVariable("id") long id) {
         ProductDto productDto = productService.findById(id);
-        if(productDto == null)
+        if (productDto == null) {
             return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+        }
         return new ResponseEntity<>(productDto, HttpStatus.OK);
     }
 
-    public ResponseEntity<ProductDto> addProduct(@RequestBody ProductDto productDto){
-        if(productService.productExists(productDto))
+    @PostMapping
+    public ResponseEntity<ProductDto> addProduct(@RequestBody ProductDto productDto) {
+        if (productService.productExists(productDto)) {
             return new ResponseEntity<>(productDto, HttpStatus.NOT_FOUND);
+        }
+
         productService.save(productDto);
         return new ResponseEntity<>(productDto, HttpStatus.CREATED);
     }
 
     @Transactional
-    public ResponseEntity<ProductDto> updateProduct(@RequestBody ProductDto productDto, @PathVariable("id") long id){
-        if(!categoryService.categoryExists(productDto.getCategory()))
-            return new ResponseEntity<>(productDto, HttpStatus.BAD_REQUEST);
-        if(!productService.productExists(productDto))
+    @PutMapping
+    public ResponseEntity<ProductDto> updateProduct(@RequestBody ProductDto productDto, @PathVariable("id") long id) {
+        if (!categoryService.categoryExists(productDto.getCategory())) {
             return new ResponseEntity<>(productDto, HttpStatus.NOT_FOUND);
+        }
+
+        if (!productService.productExists(productDto)) {
+            return new ResponseEntity<>(productDto, HttpStatus.NOT_FOUND);
+        }
+
         productDto.setId(id);
         productService.save(productDto);
         return new ResponseEntity<>(productDto, HttpStatus.OK);
     }
 
-    public ResponseEntity deleteProduct(@PathVariable("id") long id){
-        if(productService.findById(id)==null)
+    @DeleteMapping
+    public ResponseEntity deleteProduct(@PathVariable("id") long id) {
+        if (productService.findById(id) == null) {
             return ResponseEntity.notFound().build();
+        }
+
         productService.deleteById(id);
         return ResponseEntity.ok().build();
     }

@@ -6,15 +6,15 @@ services:
       - 8080:8080
     depends_on:
       - db
-    build: .
+    build: ./build/docker
   db:
     image: postgres
     ports:
       - 5432:5432
     volumes:
-      - ./data:/var/lib/postgresql/
+      - ./data:/var/lib/postgresql/data
     environment:
       POSTGRESS_USERNAME: postgres
-      POSTGRESS_PASSWORD: admin
+      #POSTGRESS_PASSWORD: admin
 volumes:
   data:

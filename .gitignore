@@ -1,6 +1,6 @@
 # Project exclude paths
 /.gradle/
-/build/
+/build/#
 /build/classes/java/main/
 # Dodaj tutaj trochę ścieżek do gitignore, szczególnie to co intellij generuje i inne ide.
 # chyba wszystko z .idea może być wyrzucone wystarczy podać sam folder

@@ -27,7 +27,7 @@ public class Category {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "ID: "+id+", name: "+name;
     }
 

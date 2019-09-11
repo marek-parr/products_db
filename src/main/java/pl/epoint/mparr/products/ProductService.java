@@ -13,36 +13,36 @@ class ProductService {
     private final ProductRepository productRepository;
     private final ModelMapper modelMapper;
 
-    List<ProductDto> findAll(){
+    List<ProductDto> findAll() {
         return productRepository.findAll().stream()
                 .map(this::convertToDto)
                 .collect(Collectors.toList());
     }
 
-    ProductDto findById(Long id){
+    ProductDto findById(Long id) {
         return convertToDto(productRepository.findById(id).orElse(null));
     }
 
-    ProductDto save(ProductDto productDto){
+    ProductDto save(ProductDto productDto) {
         productRepository.save(convertToEntity(productDto));
         return productDto;
     }
 
-    boolean productExists(ProductDto productDto){
+    boolean productExists(ProductDto productDto) {
         return productRepository.findAll()
                 .stream()
                 .anyMatch(product -> product.getId().equals(productDto.getId()));
     }
 
-    void deleteById(Long id){
+    void deleteById(Long id) {
         productRepository.deleteById(id);
     }
 
-    private ProductDto convertToDto(Product product){
+    private ProductDto convertToDto(Product product) {
         return modelMapper.map(product, ProductDto.class);
     }
 
-    private Product convertToEntity(ProductDto productDto){
+    private Product convertToEntity(ProductDto productDto) {
         return modelMapper.map(productDto, Product.class);
     }
 
