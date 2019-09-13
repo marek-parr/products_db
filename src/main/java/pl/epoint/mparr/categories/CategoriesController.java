@@ -5,6 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @RestController
@@ -37,12 +38,14 @@ class CategoriesController {
         return new ResponseEntity<>(categoryDto, HttpStatus.CREATED);
     }
 
+    @Transactional
     @PutMapping("/{id}")
     ResponseEntity<CategoryDto> updateCategory(@RequestBody CategoryDto categoryDto, @PathVariable("id") long id) {
         if(!categoryService.categoryExists(categoryDto)) {
             return new ResponseEntity<>(categoryDto, HttpStatus.NOT_FOUND);
         }
         categoryDto.setId(id);
+        categoryService.save(categoryDto);
         return new ResponseEntity<>(categoryDto, HttpStatus.OK);
     }
 
