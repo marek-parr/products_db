@@ -9,16 +9,17 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/categories")
+@RequestMapping("/api/categories")
 class CategoriesController {
 
     private final CategoryService categoryService;
 
+    @GetMapping
     ResponseEntity<List<CategoryDto>> getCategories() {
         return new ResponseEntity<>(categoryService.findAll(), HttpStatus.OK);
     }
 
-    @GetMapping
+    @GetMapping(params = {"id"})
     ResponseEntity<CategoryDto> getCategory(@PathVariable("id") long id) {
         CategoryDto categoryDto = categoryService.findById(id);
         if(categoryDto == null) {

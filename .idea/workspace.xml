@@ -4,6 +4,7 @@
     <list default="true" id="19d02fbe-97d6-4476-9afe-5e7f17f2118c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/categories/CategoriesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/categories/CategoriesController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/products/ProductsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/epoint/mparr/products/ProductsController.java" afterDir="false" />
     </list>
     <list id="ed2830ef-c2b8-41a7-92e6-16958ea128de" name="CR v2" comment="CR v2">
       <changelist_data name="=?UTF-8?q?Daniel=20Obr=C4=99bski?=" email="dobrebski@e-point.pl" />

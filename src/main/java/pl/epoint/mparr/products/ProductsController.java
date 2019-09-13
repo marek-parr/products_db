@@ -11,7 +11,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/products")
+@RequestMapping("/api/products")
 class ProductsController {
 
     private final ProductService productService;
@@ -22,7 +22,7 @@ class ProductsController {
         return new ResponseEntity<>(productService.findAll(), HttpStatus.OK);
     }
 
-    @GetMapping
+    @GetMapping(params = {"id"})
     public ResponseEntity<ProductDto> getProduct(@PathVariable("id") long id) {
         ProductDto productDto = productService.findById(id);
         if (productDto == null) {
@@ -34,6 +34,9 @@ class ProductsController {
     @PostMapping
     public ResponseEntity<ProductDto> addProduct(@RequestBody ProductDto productDto) {
         if (productService.productExists(productDto)) {
+            return new ResponseEntity<>(productDto, HttpStatus.NOT_FOUND);
+        }
+        if(!categoryService.categoryExists(productDto.getCategory())) {
             return new ResponseEntity<>(productDto, HttpStatus.NOT_FOUND);
         }
 
