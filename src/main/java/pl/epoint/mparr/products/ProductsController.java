@@ -22,7 +22,7 @@ class ProductsController {
         return new ResponseEntity<>(productService.findAll(), HttpStatus.OK);
     }
 
-    @GetMapping(params = {"id"})
+    @GetMapping("/{id}")
     public ResponseEntity<ProductDto> getProduct(@PathVariable("id") long id) {
         ProductDto productDto = productService.findById(id);
         if (productDto == null) {
@@ -45,7 +45,7 @@ class ProductsController {
     }
 
     @Transactional
-    @PutMapping
+    @PutMapping("/{id}")
     public ResponseEntity<ProductDto> updateProduct(@RequestBody ProductDto productDto, @PathVariable("id") long id) {
         if (!categoryService.categoryExists(productDto.getCategory())) {
             return new ResponseEntity<>(productDto, HttpStatus.NOT_FOUND);
@@ -60,14 +60,14 @@ class ProductsController {
         return new ResponseEntity<>(productDto, HttpStatus.OK);
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     public ResponseEntity deleteProduct(@PathVariable("id") long id) {
         if (productService.findById(id) == null) {
-            return ResponseEntity.notFound().build();
+            return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
 
         productService.deleteById(id);
-        return ResponseEntity.ok().build();
+        return new ResponseEntity(HttpStatus.NO_CONTENT);
     }
 
 }

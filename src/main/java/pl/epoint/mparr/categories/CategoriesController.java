@@ -19,7 +19,7 @@ class CategoriesController {
         return new ResponseEntity<>(categoryService.findAll(), HttpStatus.OK);
     }
 
-    @GetMapping(params = {"id"})
+    @GetMapping("/{id}")
     ResponseEntity<CategoryDto> getCategory(@PathVariable("id") long id) {
         CategoryDto categoryDto = categoryService.findById(id);
         if(categoryDto == null) {
@@ -37,7 +37,7 @@ class CategoriesController {
         return new ResponseEntity<>(categoryDto, HttpStatus.CREATED);
     }
 
-    @PutMapping
+    @PutMapping("/{id}")
     ResponseEntity<CategoryDto> updateCategory(@RequestBody CategoryDto categoryDto, @PathVariable("id") long id) {
         if(!categoryService.categoryExists(categoryDto)) {
             return new ResponseEntity<>(categoryDto, HttpStatus.NOT_FOUND);
@@ -46,13 +46,13 @@ class CategoriesController {
         return new ResponseEntity<>(categoryDto, HttpStatus.OK);
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{id}")
     ResponseEntity deleteCategory(@PathVariable("id") long id) {
         if(categoryService.findById(id)==null) {
-            return ResponseEntity.badRequest().build();
+            return new ResponseEntity(HttpStatus.NOT_FOUND);
         }
         categoryService.deleteById(id);
-        return ResponseEntity.ok().build();
+        return new ResponseEntity(HttpStatus.NO_CONTENT);
     }
 
 
